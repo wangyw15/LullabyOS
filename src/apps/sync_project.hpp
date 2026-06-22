@@ -1,4 +1,5 @@
-#pragma once
+#ifndef APP_SYNC_PROJECT
+#define APP_SYNC_PROJECT
 
 #include <M5Cardputer.h>
 #include <M5GFX.h>
@@ -8,8 +9,9 @@
 #include <vector>
 #include <algorithm>
 
-#include "shared.hpp"
 #include "app.hpp"
+#include "theme.h"
+#include "util.hpp"
 
 using namespace fonts;
 
@@ -339,3 +341,5 @@ namespace SyncProject {
         delay(50);
     }
 };
+
+#endif // APP_SYNC_PROJECT

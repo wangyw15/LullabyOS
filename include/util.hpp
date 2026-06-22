@@ -1,21 +1,12 @@
-#pragma once
+#ifndef UTIL_H
+#define UTIL_H
 
 #include <WiFi.h>
 #include <M5Cardputer.h>
 #include <M5GFX.h>
 
-// theme
-static const uint32_t C_BG         = 0x000000;
-static const uint32_t C_TEXT       = 0xFFFFFF;
-static const uint32_t C_ACCENT     = 0x19D1FF;
-static const uint32_t C_DARK_PANEL = 0x111111;
-static const uint32_t C_GRAY       = 0x666666;
-static const uint32_t C_DIM        = 0x333333;
+#include "theme.h"
 
-static const lgfx::v1::IFont* UI_FONT      = &fonts::Font0;
-static const lgfx::v1::IFont* UI_FONT_BIG  = &fonts::Font2;
-
-// utils
 inline bool keyPressed(const Keyboard_Class::KeysState& status, char c) {
     for (char k : status.word) {
         if (k == c) return true;
@@ -54,3 +45,5 @@ inline void connectWiFi(const char *ssid, const char *password) {
         delay(1000);
     }
 }
+
+#endif // UTIL_H

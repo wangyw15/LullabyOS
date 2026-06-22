@@ -1,7 +1,9 @@
-#pragma once
+#ifndef APP_LAUNCHER
+#define APP_LAUNCHER
 
 #include "app.hpp"
-#include "shared.hpp"
+#include "theme.h"
+#include "util.hpp"
 
 namespace Launcher {
     size_t appCount = 0;
@@ -76,3 +78,5 @@ namespace Launcher {
         }
     }
 };
+
+#endif // APP_LAUNCHER

@@ -1,7 +1,10 @@
-#pragma once
+#ifndef CONFIG_H
+#define CONFIG_H
 
 #define WIFI_SSID "SSID"
 #define WIFI_PASSWORD "PASSWORD"
 
 #define NOW_PLAYING_HOST "localhost"
 #define NOW_PLAYING_PORT 9863
+
+#endif // CONFIG_H

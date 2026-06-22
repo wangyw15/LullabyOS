@@ -1,4 +1,5 @@
-#pragma once
+#ifndef APP_NOW_PLAYING
+#define APP_NOW_PLAYING
 
 #include <WiFi.h>
 #include <M5Cardputer.h>
@@ -7,9 +8,10 @@
 #include <WebSocketsClient.h>
 #include <ArduinoJson.h>
 
-#include "config.h"
-#include "shared.hpp"
 #include "app.hpp"
+#include "config.h"
+#include "theme.h"
+#include "util.hpp"
 
 #define LYRIC_PLACEHOLDER ""
 
@@ -82,13 +84,13 @@ namespace NowPlaying {
         return statusCode;
     }
 
-    void drawText(
+    template<typename T> void drawText(
         const char *text,
         int16_t x,
         int16_t y,
         int16_t maxWidth,
         float textSize,
-        uint16_t color
+        T color
     ) {
         auto& display = M5Cardputer.Display;
         display.setTextSize(textSize);
@@ -152,7 +154,7 @@ namespace NowPlaying {
         display.setFont(nowPlayingFont);
         display.fillRect(coverX, coverY, coverSize, coverSize, 0x0A2A0A);
 
-        drawText(title, textX, coverY, maxWidth, 1.3, 0x00FF00);
+        drawText(title, textX, coverY, maxWidth, 1.3, 0xb5e6ff);
         drawText(author, textX, coverY + 30, maxWidth, 1.0, 0xFFFFFF);
         drawText(lyric, textX, coverY + 55, maxWidth, 1.0, 0xFFFFFF);
 
@@ -256,3 +258,5 @@ namespace NowPlaying {
         ws.loop();
     }
 };
+
+#endif // APP_NOW_PLAYING
