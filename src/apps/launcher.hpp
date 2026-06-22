@@ -77,6 +77,6 @@ namespace Launcher {
             }
         }
     }
-};
+}
 
 #endif // APP_LAUNCHER

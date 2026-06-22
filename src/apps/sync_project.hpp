@@ -340,6 +340,6 @@ namespace SyncProject {
 
         delay(50);
     }
-};
+}
 
 #endif // APP_SYNC_PROJECT

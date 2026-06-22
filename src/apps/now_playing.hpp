@@ -257,6 +257,6 @@ namespace NowPlaying {
 
         ws.loop();
     }
-};
+}
 
 #endif // APP_NOW_PLAYING
