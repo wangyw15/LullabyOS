@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/*.rpyc": true,
+        "**/*.rpa": true,
+        "**/*.rpymc": true,
+        "**/cache/": true
+    },
+    "clangd.arguments": [
+        "--compile-commands-dir=c:/Users/wangyw15/Documents/PlatformIO/Projects/LullabyOS/.cache/clangd",
+        "--query-driver=C:/Users/wangyw15/.platformio/packages/toolchain-*/bin/*,C:/Users/wangyw15/.platformio/packages/tool-*/bin/*"
+    ],
+    "clangd.path": "C:\\Users\\wangyw15\\.platformio\\packages\\tool-clangd-esp\\bin\\clangd.exe"
+}

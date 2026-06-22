@@ -7,9 +7,9 @@
 #include <WebSocketsClient.h>
 #include <ArduinoJson.h>
 
-#include "include/config.h"
-#include "include/shared.hpp"
-#include "include/app.hpp"
+#include "config.h"
+#include "shared.hpp"
+#include "app.hpp"
 
 #define LYRIC_PLACEHOLDER ""
 
@@ -149,7 +149,7 @@ namespace NowPlaying {
         const int16_t maxWidth = display.width() - textX - 8;
 
         display.clear();
-        display.setTextFont(nowPlayingFont);
+        display.setFont(nowPlayingFont);
         display.fillRect(coverX, coverY, coverSize, coverSize, 0x0A2A0A);
 
         drawText(title, textX, coverY, maxWidth, 1.3, 0x00FF00);

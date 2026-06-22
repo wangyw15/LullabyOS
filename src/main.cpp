@@ -5,8 +5,8 @@
 #include <WebSocketsClient.h>
 #include <ArduinoJson.h>
 
-#include "include/app.hpp"
-#include "include/config.h"
+#include "app.hpp"
+#include "config.h"
 #include "apps/launcher.hpp"
 #include "apps/now_playing.hpp"
 #include "apps/sync_project.hpp"

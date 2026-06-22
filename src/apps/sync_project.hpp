@@ -8,8 +8,8 @@
 #include <vector>
 #include <algorithm>
 
-#include "include/shared.hpp"
-#include "include/app.hpp"
+#include "shared.hpp"
+#include "app.hpp"
 
 using namespace fonts;
 

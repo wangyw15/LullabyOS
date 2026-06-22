@@ -1,7 +1,7 @@
 #pragma once
 
-#include "include/app.hpp"
-#include "include/shared.hpp"
+#include "app.hpp"
+#include "shared.hpp"
 
 namespace Launcher {
     size_t appCount = 0;
