@@ -9,7 +9,7 @@
 #include "config.h"
 #include "apps/launcher.hpp"
 #include "apps/now_playing.hpp"
-#include "apps/sync_project.hpp"
+#include "apps/ark_radar.hpp"
 
 void setup() {
     auto& display = M5Cardputer.Display;
@@ -32,7 +32,7 @@ void setup() {
 
     // register apps
     App::apps.push_back({"Launcher", Launcher::setup, Launcher::loop});
-    App::apps.push_back({"Sync Project", SyncProject::setup, SyncProject::loop});
+    App::apps.push_back({"ArkRadar", ArkRadar::setup, ArkRadar::loop});
     App::apps.push_back({"Now Playing", NowPlaying::setup, NowPlaying::loop});
 
     // log apps
