@@ -39,7 +39,7 @@ namespace Launcher {
         dsp.setFont(UI_FONT);
         dsp.drawString("ENTER=launch  Btn=back", dsp.width() / 2, dsp.height() - 4);
 
-        Serial.print("[Launcher] current select:");
+        Serial.print("[Launcher] Select: ");
         Serial.println(App::apps[selectedApp].name);
     }
 

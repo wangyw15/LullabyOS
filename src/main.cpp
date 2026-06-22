@@ -19,10 +19,10 @@ void setup() {
     M5Cardputer.begin(cfg, true);
     M5Cardputer.Display.setRotation(1);
     Serial.begin(9600);
-    Serial.println("Hello from MyCardputer");
+    Serial.println("[LullabyOS] Boot");
 
     // splash screen
-    drawSplashScreen("MY CARDPUTER");
+    drawSplashScreen("LullabyOS");
 
     // set log font
     display.setTextSize(1);
